@@ -15,27 +15,36 @@ const Contact = () => {
     message: ''
   })
 
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState(null)
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    const { fullName, email, phone, subject, message } = formData
-
-    const mailtoLink = `mailto:lignel@lignelhealthcareltd.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Full Name: ${fullName}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`)}`
-
-    window.open(mailtoLink, "_blank")
-
-    setSubmitStatus("success")
-    setFormData({
-      fullName: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: ""
-    })
-
-    // Reset status after 5 seconds
-    setTimeout(() => setSubmitStatus(null), 5000)
+    setIsSubmitting(true)
+    
+    // Simulate form submission
+    setTimeout(() => {
+      setIsSubmitting(false)
+      setSubmitStatus('success')
+      setFormData({
+        fullName: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      })
+      
+      // Reset status after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000)
+    }, 2000)
   }
 
   const contactInfo = [
@@ -205,10 +214,20 @@ const Contact = () => {
 
                   <Button
                     type="submit"
+                    disabled={isSubmitting}
                     className="w-full bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white"
                   >
-                    <Send className="h-4 w-4 mr-2" />
-                    Send Message
+                    {isSubmitting ? (
+                      <>
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="h-4 w-4 mr-2" />
+                        Send Message
+                      </>
+                    )}
                   </Button>
                 </form>
               </CardContent>
