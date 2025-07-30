@@ -300,7 +300,9 @@ const Products = () => {
   })
 
   const handleRequestQuote = (productName) => {
-    alert(`Quote request for "${productName}" has been submitted. We'll contact you soon!`)
+    const message = `Hello! I would like to request a quote for "${productName}". Please provide me with pricing and availability information.`
+    const whatsappUrl = `https://wa.me/18149549493?text=${encodeURIComponent(message)}`
+    window.open(whatsappUrl, '_blank')
   }
 
   return (
@@ -355,12 +357,12 @@ const Products = () => {
           {/* Products Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {filteredProducts.map((product) => (
-              <Card key={product.id} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group">
+              <Card key={product.id} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 group flex flex-col h-full">
                 <div className="relative overflow-hidden">
                   <img 
                     src={product.image} 
                     alt={product.name}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-56 object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-300"
                   />
                   {product.badge && (
                     <Badge 
@@ -376,7 +378,7 @@ const Products = () => {
                   </div>
                 </div>
                 
-                <CardContent className="p-4">
+                <CardContent className="p-4 flex flex-col h-full">
                   <div className="flex items-center justify-between mb-2">
                     <div className="flex items-center">
                       {[...Array(5)].map((_, i) => (
@@ -397,7 +399,7 @@ const Products = () => {
                     {product.name}
                   </h3>
                   
-                  <p className="text-gray-600 text-sm mb-3 line-clamp-2">
+                  <p className="text-gray-600 text-sm mb-3 line-clamp-2 flex-grow">
                     {product.description}
                   </p>
                   
@@ -410,7 +412,7 @@ const Products = () => {
                     ))}
                   </div>
                   
-                  <div className="flex gap-2">
+                  <div className="flex gap-2 mt-auto">
                     <Button 
                       onClick={() => handleRequestQuote(product.name)}
                       className="flex-1 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white text-sm"

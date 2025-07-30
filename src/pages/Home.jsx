@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Heart, Shield, Users, Award, Star, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
-import healthWellness2 from '../assets/images/health_wellness/health_wellness_2.jpg'
+import heroImage from '../assets/images/hero-image-lignelhealthcareltd.jpeg'
 import supplements1 from '../assets/images/supplements/supplements_1.jpg'
 import medicalEquipment1 from '../assets/images/medical_equipment/medical_equipment_1.jpg'
 import team1 from '../assets/images/team/team_1.jpg'
@@ -111,7 +111,7 @@ const Home = () => {
             <div className="relative">
               <div className="relative z-10">
                 <img 
-                  src={healthWellness2} 
+                  src={heroImage} 
                   alt="Health and Wellness" 
                   className="rounded-2xl shadow-2xl w-full h-auto"
                 />

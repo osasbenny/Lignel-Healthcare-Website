@@ -57,7 +57,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone Number",
-      details: "Contact us for inquiries",
+      details: "+1 (814) 954-9493 | +234 706 801 9978",
       description: "Available during business hours"
     },
     {
@@ -69,8 +69,8 @@ const Contact = () => {
     {
       icon: Clock,
       title: "Business Hours",
-      details: "Mon - Fri: 8:00 AM - 6:00 PM",
-      description: "Saturday: 9:00 AM - 4:00 PM"
+      details: "Mon - Fri: 8:00 AM - 6:00 PM (EDT/WAT)",
+      description: "Saturday: 9:00 AM - 4:00 PM (EDT/WAT)"
     }
   ]
 
@@ -284,6 +284,7 @@ const Contact = () => {
                     <Button 
                       variant="outline" 
                       className="w-full border-blue-600 text-blue-600 hover:bg-blue-50"
+                      onClick={() => window.open('https://wa.me/18149549493', '_blank')}
                     >
                       <Phone className="h-4 w-4 mr-2" />
                       WhatsApp Support
