@@ -1,10 +1,10 @@
 import { Users, Target, Heart, Globe, Award, Lightbulb } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import healthWellness4 from '../assets/images/health_wellness/health_wellness_4.jpg'
-import team1 from '../assets/images/team/team_1.jpg'
+import researchTeam2 from '../assets/images/team/researchteam-2.jpeg'
 
 // New leadership image imports
-import lightObiomaNdurue from '../assets/images/team/Light-Obioma-Ndurue.jpg'
+import lightObiomaNdurue from '../assets/images/team/ceo-img-2.jpeg'
 import chineloCNdurue from '../assets/images/team/Chinelo-C-Ndurue.jpg'
 
 const About = () => {
@@ -326,7 +326,7 @@ const About = () => {
             </div>
             <div className="relative">
               <img 
-                src={team1} 
+                src={researchTeam2} 
                 alt="Multidisciplinary Healthcare Team" 
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
