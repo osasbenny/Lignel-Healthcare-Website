@@ -5,7 +5,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import heroImage from '../assets/images/hero-image-lignelhealthcareltd.jpeg'
 import supplements1 from '../assets/images/supplements/supplements_1.jpg'
 import medicalEquipment1 from '../assets/images/medical_equipment/medical_equipment_1.jpg'
-import team1 from '../assets/images/team/team_1.jpg'
+import publicHealthPrograms from '../assets/images/health_wellness/public_health_programs.jpeg'
 
 const Home = () => {
   const highlights = [
@@ -20,7 +20,7 @@ const Home = () => {
       icon: Users,
       title: "Public Health Programs",
       description: "Community outreach initiatives focused on health education and disease prevention.",
-      image: team1,
+      image: publicHealthPrograms,
       link: "/about"
     },
     {
