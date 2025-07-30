@@ -100,7 +100,7 @@ const Footer = () => {
             </div>
             <div className="text-center md:text-right">
               <p className="text-gray-400 text-sm">
-                © 2024 Lignel Healthcare Company Limited. All rights reserved.
+                © 2025 Lignel Healthcare Company Limited. All rights reserved.
               </p>
               <p className="text-gray-500 text-xs mt-1">
                 Quality. Wellness. Longevity
