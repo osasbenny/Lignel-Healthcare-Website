@@ -108,7 +108,7 @@ const Products = () => {
     },
     {
       id: 7,
-      name: "Multivitamin (IMG-20250723-WA0012)",
+      name: "Multivitamin",
       category: "supplements",
       image: img20250723WA0012,
       description: "A complete daily multivitamin for overall well-being.",
@@ -118,7 +118,7 @@ const Products = () => {
     },
     {
       id: 8,
-      name: "Multivitamin (IMG-20250723-WA0011)",
+      name: "Multivitamin",
       category: "supplements",
       image: img20250723WA0011,
       description: "Advanced multivitamin formula for comprehensive health support.",
@@ -128,7 +128,7 @@ const Products = () => {
     },
     {
       id: 9,
-      name: "Multivitamin (IMG-20250723-WA0018)",
+      name: "Multivitamin",
       category: "supplements",
       image: img20250723WA0018,
       description: "Specially formulated multivitamin for active lifestyles.",
@@ -148,7 +148,7 @@ const Products = () => {
     },
     {
       id: 11,
-      name: "Multivitamin (IMG-20250723-WA0005)",
+      name: "Multivitamin",
       category: "supplements",
       image: img20250723WA0005,
       description: "Daily multivitamin for foundational health and vitality.",
@@ -158,7 +158,7 @@ const Products = () => {
     },
     {
       id: 12,
-      name: "Multivitamin (IMG-20250723-WA0004)",
+      name: "Multivitamin",
       category: "supplements",
       image: img20250723WA0004,
       description: "Essential multivitamin for daily nutritional gaps.",
@@ -168,7 +168,7 @@ const Products = () => {
     },
     {
       id: 13,
-      name: "Multivitamin (IMG-20250723-WA0003)",
+      name: "Multivitamin",
       category: "supplements",
       image: img20250723WA0003,
       description: "Premium multivitamin for comprehensive health and wellness.",
@@ -178,7 +178,7 @@ const Products = () => {
     },
     {
       id: 14,
-      name: "Multivitamin (IMG-20250723-WA0002)",
+      name: "Multivitamin",
       category: "supplements",
       image: img20250723WA0002,
       description: "A balanced multivitamin for everyday health maintenance.",
