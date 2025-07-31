@@ -30,7 +30,7 @@ import medicalEquipment1 from '../assets/images/medical_equipment/medical_equipm
 import medicalEquipment2 from '../assets/images/medical_equipment/medical_equipment_2.jpg'
 import medicalEquipment3 from '../assets/images/medical_equipment/medical_equipment_3.jpg'
 import medicalEquipment5 from '../assets/images/medical_equipment/medical_equipment_5.jpg'
-import medicalEquipment6 from '../assets/images/medical_equipment/medical_equipment_6.jpg'
+import nebulizerSystem from '../assets/images/medical_equipment/nebulizer_system.jpg'
 import medicalEquipment7 from '../assets/images/medical_equipment/medical_equipment_7.jpg'
 
 const Products = () => {
@@ -88,7 +88,7 @@ const Products = () => {
     },
     {
       id: 5,
-      name: "Evening Primrose Oil (1)",
+      name: "Evening Primrose (1)",
       category: "supplements",
       image: eveningPrimrose1,
       description: "Supports hormonal balance and skin health.",
@@ -138,7 +138,7 @@ const Products = () => {
     },
     {
       id: 10,
-      name: "Evening Primrose Oil (2)",
+      name: "Evening Primrose (2)",
       category: "supplements",
       image: eveningPrimrose2,
       description: "Pure evening primrose oil for women's health and wellness.",
@@ -194,7 +194,7 @@ const Products = () => {
       description: "Synergistic blend for bone and cardiovascular health.",
       features: ["Optimal absorption", "Bone density", "Heart health"],
       rating: 4.9,
-      badge: "Top Rated"
+      badge: null
     },
     {
       id: 16,
@@ -262,7 +262,7 @@ const Products = () => {
       id: 22,
       name: "Nebulizer System",
       category: "medical-devices",
-      image: medicalEquipment6,
+      image: nebulizerSystem,
       description: "Compact nebulizer for respiratory medication delivery.",
       features: ["Quiet operation", "Portable design", "Complete kit"],
       rating: 4.5,
@@ -385,7 +385,7 @@ const Products = () => {
                         <Star 
                           key={i} 
                           className={`h-4 w-4 ${
-                            i < Math.floor(product.rating) 
+                            product.rating >= 4.9 
                               ? 'text-yellow-400 fill-current' 
                               : 'text-gray-300'
                           }`} 

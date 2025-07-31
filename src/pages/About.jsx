@@ -12,48 +12,43 @@ const About = () => {
     {
       icon: Heart,
       title: "Compassion",
-      description: "We approach every interaction with empathy and understanding, putting people's wellbeing at the center of everything we do."
-    },
-    {
-      icon: Award,
-      title: "Quality",
-      description: "We maintain the highest standards in all our products and services, ensuring excellence in every aspect of our operations."
+      description: "People first, always."
     },
     {
       icon: Lightbulb,
       title: "Innovation",
-      description: "We continuously seek new ways to improve healthcare outcomes through cutting-edge research and technology."
+      description: "Advancing science for better health."
     },
     {
-      icon: Users,
-      title: "Collaboration",
-      description: "We believe in the power of partnerships and teamwork to create meaningful change in global health."
+      icon: Award,
+      title: "Integrity",
+      description: "Ethical service, transparent impact."
+    },
+    {
+      icon: Award,
+      title: "Excellence",
+      description: "Consistently exceeding expectations."
     },
     {
       icon: Globe,
-      title: "Global Impact",
-      description: "Our vision extends beyond borders, aiming to improve health outcomes for communities worldwide."
-    },
-    {
-      icon: Target,
-      title: "Excellence",
-      description: "We strive for excellence in every endeavor, setting high standards and consistently delivering results."
+      title: "Impact",
+      description: "Creating healthier futures for all."
     }
   ]
 
   const leadership = [
     {
       name: "Light Obioma Ndurue",
-      role: "Chief Executive Officer",
-      background: "Public Health Expert",
-      description: "Light brings extensive experience in public health policy and community health initiatives. With a passion for improving healthcare access and outcomes, she leads Lignel Healthcare's strategic vision and operational excellence.",
+      role: "Founder & CEO – Lignel Healthcare Company Limited / Lignel Healthcare LLC",
+      background: "Researcher | Patient Safety Expert | Public Health Advocate | Entrepreneur | Community Leader",
+      description: "With over 13 years of experience across nursing, diagnostic imaging, public health, and healthcare management, Light leads the company's global vision with a deep commitment to innovation and impact. He has built cross-sector partnerships across local and international spheres to champion quality, affordable healthcare for all.",
       image: lightObiomaNdurue // Updated image path
     },
     {
       name: "Chinelo C. Ndurue",
-      role: "Chief Financial Officer",
+      role: "Co-Founder & CFO",
       background: "Business Transformation Expert",
-      description: "Chinelo is a seasoned business transformation expert with a proven track record in financial management and organizational development. She oversees financial strategy and business operations at Lignel Healthcare.",
+      description: "Chinelo brings strategic expertise in business transformation, supply chain optimization, and program management. Her leadership ensures operational excellence and financial sustainability, supporting Lignel’s growth across sectors and borders.",
       image: chineloCNdurue // Updated image path
     }
   ]
@@ -62,27 +57,17 @@ const About = () => {
     {
       year: "2020",
       title: "Company Founded",
-      description: "Lignel Healthcare Company Limited was established with a vision to transform healthcare in Nigeria."
-    },
-    {
-      year: "2021",
-      title: "First Product Launch",
-      description: "Launched our first line of premium nutritional supplements, setting new quality standards in the market."
-    },
-    {
-      year: "2022",
-      title: "Public Health Initiatives",
-      description: "Expanded into community health programs, reaching over 1,000 individuals in our first year."
-    },
-    {
-      year: "2023",
-      title: "Medical Equipment Division",
-      description: "Added medical equipment supply to our services, partnering with leading healthcare facilities."
+      description: "Lignel Healthcare began with a clear mission: to enhance health and wellness through high-quality supplements and accessible healthcare services. Initially registered in Nigeria under CAC No. 3604745, the company operated as a pharmaceutical service provider committed to improving health outcomes across communities, especially for underserved populations."
     },
     {
       year: "2024",
-      title: "Brand Relaunch",
-      description: "Completed comprehensive rebranding to better reflect our expanded mission and growing impact."
+      title: "Rebranding and Relocation",
+      description: "Lignel evolved into Lignel Healthcare Company Limited (CAC No. 7797103) in accordance with the Companies and Allied Matters Act 2020. Our headquarters was relocated to Owerri, Imo State, reflecting our growing national presence and dedication to service expansion."
+    },
+    {
+      year: "2025",
+      title: "US Market Entry and Global Expansion",
+      description: "Lignel Healthcare made a major leap forward, formally establishing Lignel Healthcare LLC in the United States of America, strategically positioned in the heart of the world’s largest pharmaceutical manufacturing hub. This milestone strengthens our ability to collaborate globally and swiftly distribute our scientifically backed, high-quality supplements to customers across continents. By leveraging transatlantic logistics networks, advanced regulatory infrastructure, and global partnerships, we ensure timely delivery and seamless access to our wellness solutions, wherever they're needed."
     }
   ]
 
@@ -97,12 +82,11 @@ const About = () => {
                 About <span className="text-blue-600">Lignel Healthcare</span>
               </h1>
               <p className="text-xl text-gray-600">
-                Founded in 2020 and rebranded in 2024, we are dedicated to advancing healthcare 
-                excellence through innovation, compassion, and unwavering commitment to quality.
+                Founded in 2020, Lignel Healthcare began with a clear mission: to enhance health and wellness through high-quality supplements and accessible healthcare services. Initially registered in Nigeria under CAC No. 3604745, the company operated as a pharmaceutical service provider committed to improving health outcomes across communities, especially for underserved populations.
               </p>
               <div className="flex items-center space-x-8 pt-4">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600">4+</div>
+                  <div className="text-3xl font-bold text-blue-600">5+</div>
                   <div className="text-sm text-gray-600">Years of Excellence</div>
                 </div>
                 <div className="text-center">
@@ -137,9 +121,7 @@ const About = () => {
                   <h2 className="text-2xl font-bold text-gray-900">Our Mission</h2>
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  To improve global health outcomes by providing high-quality nutritional supplements, 
-                  innovative medical equipment, and comprehensive public health solutions that empower 
-                  individuals and communities to achieve optimal wellness.
+                  To improve lives through innovative, accessible, and quality healthcare solutions while empowering communities through education, research, and outreach.
                 </p>
               </CardContent>
             </Card>
@@ -148,12 +130,18 @@ const About = () => {
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Globe className="h-8 w-8 text-green-600 mr-3" />
-                  <h2 className="text-2xl font-bold text-gray-900">Our Vision</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">What We Do</h2>
                 </div>
                 <p className="text-gray-700 text-lg leading-relaxed">
-                  To be the leading healthcare company in Africa, recognized for our commitment to 
-                  quality, innovation, and social impact, creating a world free from poverty, 
-                  hunger, and preventable diseases.
+                  Lignel Healthcare Company Limited offers a comprehensive range of health-focused products and services:
+                  <ul>
+                    <li>Production and global distribution of premium nutritional supplements</li>
+                    <li>Wellness and preventive healthcare programs</li>
+                    <li>Community outreach and free medical missions</li>
+                    <li>Supply of pharmaceutical and diagnostic equipment</li>
+                    <li>Research and development in health innovation</li>
+                    <li>Advisory and consulting for public and private health initiatives</li>
+                  </ul>
                 </p>
               </CardContent>
             </Card>
@@ -251,8 +239,7 @@ const About = () => {
               Leadership Team
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Meet the visionary leaders driving Lignel Healthcare's mission to transform 
-              global health outcomes.
+              Lignel Healthcare is driven by a multidisciplinary team of healthcare professionals, ICT specialists, and business experts. Together, they power the innovation, precision, and human touch behind everything we do.
             </p>
           </div>
 
@@ -288,63 +275,15 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Overview */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                Our Multidisciplinary Team
-              </h2>
-              <p className="text-lg text-gray-600">
-                Our diverse team brings together expertise from various fields including public health, 
-                medicine, nutrition, business development, and technology. This multidisciplinary approach 
-                enables us to address complex healthcare challenges with innovative, comprehensive solutions.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-blue-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Public Health Specialists</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-green-600 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Medical Professionals</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-blue-800 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Nutrition Experts</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-green-800 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Business Development</span>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-3 h-3 bg-blue-400 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Research & Development</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <img 
-                src={researchTeam2} 
-                alt="Multidisciplinary Healthcare Team" 
-                className="rounded-2xl shadow-2xl w-full h-auto"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Our Reach */}
       <section className="py-16 bg-gradient-to-r from-blue-600 to-green-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="max-w-3xl mx-auto space-y-6">
             <h2 className="text-3xl lg:text-4xl font-bold text-white">
-              Our Reach: National and Global Expansion
+              Our Global Reach
             </h2>
             <p className="text-xl text-blue-100">
-              Based in Owerri, Imo State, Nigeria, we are expanding our impact across Africa 
-              and beyond, bringing quality healthcare solutions to communities that need them most.
+              Our products and services are widely available across Nigeria, Ghana, Cameroon, Kenya and now with a growing international footprint through Lignel Healthcare LLC (USA). We are positioned to serve global markets efficiently, with special attention to marginalized communities and health-challenged regions through sustainable partnerships and scalable distribution.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-8">
               <div className="text-center">
@@ -353,7 +292,7 @@ const About = () => {
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-white mb-2">Africa</div>
-                <div className="text-100">Regional Expansion</div>
+                <div className="text-blue-100">Regional Expansion</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold text-white mb-2">Global</div>
@@ -368,6 +307,5 @@ const About = () => {
 }
 
 export default About
-
 
 
