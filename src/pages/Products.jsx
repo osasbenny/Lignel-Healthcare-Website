@@ -53,7 +53,7 @@ const Products = () => {
       image: lignelImmunityBooster,
       description: "Boost your immune system with this powerful blend of natural ingredients.",
       features: ["Enhanced immunity", "Natural ingredients", "Daily support"],
-      rating: 4.9,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "New Arrival"
     },
     {
@@ -63,7 +63,7 @@ const Products = () => {
       image: zinc100mg,
       description: "High-potency zinc for immune support and overall health.",
       features: ["100mg per serving", "Essential mineral", "Supports cellular function"],
-      rating: 4.7,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
@@ -73,7 +73,7 @@ const Products = () => {
       image: zinc50mg,
       description: "Daily zinc supplement for immune health and antioxidant support.",
       features: ["50mg per serving", "Immune booster", "Antioxidant properties"],
-      rating: 4.6,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Popular"
     },
     {
@@ -83,17 +83,17 @@ const Products = () => {
       image: immunityBooster,
       description: "Comprehensive formula to strengthen your body's natural defenses.",
       features: ["Vitamin C & D", "Elderberry extract", "Zinc fortified"],
-      rating: 4.8,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Best Seller"
     },
     {
       id: 5,
-      name: "Evening Primrose (1)",
+      name: "Evening Primrose I",
       category: "supplements",
       image: eveningPrimrose1,
       description: "Supports hormonal balance and skin health.",
       features: ["Rich in GLA", "Women's health", "Skin nourishment"],
-      rating: 4.5,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
@@ -103,7 +103,7 @@ const Products = () => {
       image: lignelBeauty,
       description: "Nourish your skin, hair, and nails from within.",
       features: ["Collagen support", "Biotin enriched", "Radiant glow"],
-      rating: 4.9,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Premium"
     },
     {
@@ -113,7 +113,7 @@ const Products = () => {
       image: img20250723WA0012,
       description: "A complete daily multivitamin for overall well-being.",
       features: ["Essential nutrients", "Energy support", "Daily vitality"],
-      rating: 4.7,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
@@ -123,7 +123,7 @@ const Products = () => {
       image: img20250723WA0011,
       description: "Advanced multivitamin formula for comprehensive health support.",
       features: ["High absorption", "Antioxidant blend", "Immune support"],
-      rating: 4.8,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "New"
     },
     {
@@ -133,17 +133,17 @@ const Products = () => {
       image: img20250723WA0018,
       description: "Specially formulated multivitamin for active lifestyles.",
       features: ["Performance support", "Muscle recovery", "Electrolyte balance"],
-      rating: 4.6,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
       id: 10,
-      name: "Evening Primrose (2)",
+      name: "Evening Primrose II",
       category: "supplements",
       image: eveningPrimrose2,
       description: "Pure evening primrose oil for women's health and wellness.",
       features: ["Hormonal balance", "Skin hydration", "Anti-inflammatory"],
-      rating: 4.7,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
@@ -153,7 +153,7 @@ const Products = () => {
       image: img20250723WA0005,
       description: "Daily multivitamin for foundational health and vitality.",
       features: ["Broad spectrum", "Easy to swallow", "Non-GMO"],
-      rating: 4.5,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
@@ -163,7 +163,7 @@ const Products = () => {
       image: img20250723WA0004,
       description: "Essential multivitamin for daily nutritional gaps.",
       features: ["Supports immunity", "Bone health", "Energy production"],
-      rating: 4.6,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
@@ -173,7 +173,7 @@ const Products = () => {
       image: img20250723WA0003,
       description: "Premium multivitamin for comprehensive health and wellness.",
       features: ["Bioavailable forms", "Vegetarian friendly", "Gluten-free"],
-      rating: 4.8,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
@@ -183,47 +183,47 @@ const Products = () => {
       image: img20250723WA0002,
       description: "A balanced multivitamin for everyday health maintenance.",
       features: ["Complete formula", "Supports metabolism", "Antioxidant support"],
-      rating: 4.7,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
       id: 15,
-      name: "Vitamin D3 + K2 (1)",
+      name: "Vitamin D3 + K2 I",
       category: "supplements",
       image: vd1k1,
       description: "Synergistic blend for bone and cardiovascular health.",
       features: ["Optimal absorption", "Bone density", "Heart health"],
-      rating: 4.9,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
       id: 16,
-      name: "Vitamin D3 + K2 (2)",
+      name: "Vitamin D3 + K2 II",
       category: "supplements",
       image: vd1k4,
       description: "Supports calcium absorption and arterial health.",
       features: ["Strong bones", "Vascular support", "Immune function"],
-      rating: 4.8,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
       id: 17,
-      name: "B-Complex (1)",
+      name: "B-Complex I",
       category: "supplements",
       image: bcg1,
       description: "Essential B vitamins for energy production and nerve function.",
       features: ["Stress support", "Metabolism boost", "Brain health"],
-      rating: 4.7,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
       id: 18,
-      name: "B-Complex (2)",
+      name: "B-Complex II",
       category: "supplements",
       image: bcg4,
       description: "High-potency B-complex for daily energy and well-being.",
       features: ["Comprehensive blend", "Nervous system support", "Cellular energy"],
-      rating: 4.8,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
 
@@ -235,7 +235,7 @@ const Products = () => {
       image: medicalEquipment2,
       description: "Accurate and reliable blood pressure monitoring for home and clinical use.",
       features: ["Large LCD display", "Memory storage", "WHO indicator"],
-      rating: 4.7,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Professional"
     },
     {
@@ -245,7 +245,7 @@ const Products = () => {
       image: medicalEquipment3,
       description: "Fingertip pulse oximeter for oxygen saturation and pulse rate monitoring.",
       features: ["OLED display", "Low battery indicator", "Auto power-off"],
-      rating: 4.6,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
@@ -255,7 +255,7 @@ const Products = () => {
       image: medicalEquipment5,
       description: "Fast and accurate temperature measurement for all ages.",
       features: ["1-second reading", "Fever alarm", "Memory recall"],
-      rating: 4.8,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Fast"
     },
     {
@@ -265,7 +265,7 @@ const Products = () => {
       image: nebulizerSystem,
       description: "Compact nebulizer for respiratory medication delivery.",
       features: ["Quiet operation", "Portable design", "Complete kit"],
-      rating: 4.5,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Portable"
     },
 
@@ -277,7 +277,7 @@ const Products = () => {
       image: medicalEquipment1,
       description: "State-of-the-art diagnostic imaging equipment for medical facilities.",
       features: ["High resolution", "AI-assisted", "Cloud connectivity"],
-      rating: 4.9,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Advanced"
     },
     {
@@ -287,7 +287,7 @@ const Products = () => {
       image: medicalEquipment7,
       description: "Comprehensive laboratory equipment for accurate medical testing.",
       features: ["Multi-parameter", "Automated", "Quality control"],
-      rating: 4.8,
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Professional"
     }
   ]
