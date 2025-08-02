@@ -320,17 +320,17 @@ const Products = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <video controls className="w-full h-auto">
+                <source src={lignelVitaminDVideo} type="video/mp4" />
+                Your browser does not support the the video tag.
+              </video>
+              <p className="p-4 text-lg font-semibold">Lignel Healthcare Vitamin D</p>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <video controls className="w-full h-auto">
                 <source src={lignelImmunityBoosterVideo} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
               <p className="p-4 text-lg font-semibold">Lignel Healthcare Immunity Booster</p>
-            </div>
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <video controls className="w-full h-auto">
-                <source src={lignelVitaminDVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-              <p className="p-4 text-lg font-semibold">Lignel Healthcare Vitamin D</p>
             </div>
           </div>
         </div>
