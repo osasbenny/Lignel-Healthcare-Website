@@ -5,6 +5,10 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 
+// Video imports
+const lignelImmunityBoosterVideo = "/lignel-healthcare-immune-booster-video.mp4"
+const lignelVitaminDVideo = "/lignel-healthcare-vitamine-D-video.mp4"
+
 // New Image Imports
 import lignelImmunityBooster from '../assets/images/supplements/Lignel_Immunity_Booster.jpg'
 import zinc100mg from '../assets/images/supplements/Zinc_100mg.jpg'
@@ -307,6 +311,31 @@ const Products = () => {
 
   return (
     <div className="min-h-screen">
+      {/* Video Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-8">
+            Explore Our Products in Action
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <video controls className="w-full h-auto">
+                <source src={lignelImmunityBoosterVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <p className="p-4 text-lg font-semibold">Lignel Healthcare Immunity Booster</p>
+            </div>
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <video controls className="w-full h-auto">
+                <source src={lignelVitaminDVideo} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <p className="p-4 text-lg font-semibold">Lignel Healthcare Vitamin D</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-green-50 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
