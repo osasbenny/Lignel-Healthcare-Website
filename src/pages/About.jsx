@@ -251,7 +251,7 @@ const About = () => {
                     <img 
                       src={leader.image} 
                       alt={leader.name}
-                      className="w-full h-64 md:h-full object-cover"
+                      className="w-full h-64 md:h-full object-contain"
                     />
                   </div>
                   <CardContent className="md:w-2/3 p-6">
