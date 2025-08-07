@@ -24,7 +24,7 @@ import medicalEquipment2 from '../assets/images/medical_equipment/medical_equipm
 import medicalEquipment3 from '../assets/images/medical_equipment/medical_equipment_3.jpg'
 import medicalEquipment5 from '../assets/images/medical_equipment/medical_equipment_5.jpg'
 import nebulizerSystem from '../assets/images/medical_equipment/nebulizer_system.jpg'
-import medicalEquipment7 from '../assets/images/medical_equipment/medical_equipment_7.jpg'
+import ultrasoundSystem from '../assets/images/medical_equipment/ultrasound_system.webp'
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all")
@@ -247,7 +247,7 @@ const Products = () => {
       id: 24,
       name: "Portable Ultrasound System",
       category: "diagnostics",
-      image: medicalEquipment7,
+      image: ultrasoundSystem,
       description: "Lightweight and versatile ultrasound for on-the-go diagnostics.",
       features: ["High-frequency transducer", "Real-time imaging", "Rechargeable battery"],
       rating: Math.random() < 0.5 ? 4.0 : 5.0,
@@ -351,29 +351,31 @@ const Products = () => {
                     </div>
                     <span className="text-gray-600 text-sm ml-2">({product.rating.toFixed(1)})</span>
                   </div>
-                  <Accordion type="single" collapsible className="w-full">
-                    <AccordionItem value="item-1">
-                      <AccordionTrigger className="text-blue-600 hover:text-blue-800">Product Details</AccordionTrigger>
-                      <AccordionContent>
-                        <p className="text-gray-600 text-sm mb-2">
-                          {product.description}
-                        </p>
-                        {product.benefits && product.benefits.length > 0 && (
-                          <ul className="list-disc list-inside text-gray-600 text-sm">
-                            {product.benefits.map((benefit, index) => (
-                              <li key={index}>{benefit}</li>
-                            ))}
-                          </ul>
-                        )}
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                  <Button
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white mt-4"
-                    onClick={() => handleWhatsappClick(product.name)}
-                  >
-                    <ShoppingCart className="mr-2 h-4 w-4" /> Request Quote
-                  </Button>
+                  <div className="flex justify-between items-center w-full mt-4">
+                    <Accordion type="single" collapsible className="w-1/2">
+                      <AccordionItem value="item-1">
+                        <AccordionTrigger className="text-blue-600 hover:text-blue-800">Product Details</AccordionTrigger>
+                        <AccordionContent>
+                          <p className="text-gray-600 text-sm mb-2">
+                            {product.description}
+                          </p>
+                          {product.benefits && product.benefits.length > 0 && (
+                            <ul className="list-disc list-inside text-gray-600 text-sm">
+                              {product.benefits.map((benefit, index) => (
+                                <li key={index}>{benefit}</li>
+                              ))}
+                            </ul>
+                          )}
+                        </AccordionContent>
+                      </AccordionItem>
+                    </Accordion>
+                    <Button
+                      className="w-1/2 ml-4 bg-blue-600 hover:bg-blue-700 text-white"
+                      onClick={() => handleWhatsappClick(product.name)}
+                    >
+                      <ShoppingCart className="mr-2 h-4 w-4" /> Request Quote
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>
             ))}
