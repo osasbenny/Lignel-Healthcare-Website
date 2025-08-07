@@ -26,6 +26,8 @@ import digitalThermometer from '../assets/images/medical_equipment/digital_therm
 import xrayMachine from '../assets/images/medical_equipment/xray_machine.jpg'
 import mriMachine from '../assets/images/medical_equipment/mri_machine.jpg'
 import advancedEcGMonitoringSystem from '../assets/images/medical_equipment/advanced_ecg_monitoring_system.jpg'
+import nebulizerSystem from '../assets/images/medical_equipment/nebulizer_system_new.jpg'
+import ultrasoundSystem from '../assets/images/medical_equipment/ultrasound_system.webp'
 import surgicalMask from '../assets/images/medical_equipment/surgical_mask.jpg'
 import surgicalGloves from '../assets/images/medical_equipment/surgical_gloves.jpg'
 import surgicalGowns from '../assets/images/medical_equipment/surgical_gowns.jpg'
@@ -455,5 +457,3 @@ const Products = () => {
 }
 
 export default Products
-
-
