@@ -40,13 +40,13 @@ const About = () => {
     {
       name: "Light Obioma Ndurue",
       role: "Founder & CEO – Lignel Healthcare Company Limited / Lignel Healthcare LLC",
-      background: "Researcher | Patient Safety Expert | Public Health Advocate | Entrepreneur | Community Leader",
+      background: "MSN, MPHN, MCHN, RN, OHSN, CPHN",
       description: "With over 13 years of experience across nursing, diagnostic imaging, public health, and healthcare management, Light leads the company's global vision with a deep commitment to innovation and impact. He has built cross-sector partnerships across local and international spheres to champion quality, affordable healthcare for all.",
       image: lightObiomaNdurue // Updated image path
     },
     {
       name: "Chinelo C. Ndurue",
-      role: "Co-Founder & CFO",
+      role: "Co-Founder & CFO (MBA, MFin, M.Eng)",
       background: "Business Transformation Expert",
       description: "Chinelo brings strategic expertise in business transformation, supply chain optimization, and program management. Her leadership ensures operational excellence and financial sustainability, supporting Lignel’s growth across sectors and borders.",
       image: chineloCNdurue // Updated image path
