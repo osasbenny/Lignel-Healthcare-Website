@@ -19,12 +19,16 @@ import LignelHealthcareEveningPrimroseOil1000mgCapsules from '../assets/images/n
 import LignelHealthcareZincTablets100mg from '../assets/images/new_products/LignelHealthcareZincTablets100mg.jpeg'
 
 // Existing Medical Equipment Imports (keep these)
-import medicalEquipment1 from '../assets/images/medical_equipment/medical_equipment_1.jpg'
-import medicalEquipment2 from '../assets/images/medical_equipment/medical_equipment_2.jpg'
-import medicalEquipment3 from '../assets/images/medical_equipment/medical_equipment_3.jpg'
-import medicalEquipment5 from '../assets/images/medical_equipment/medical_equipment_5.jpg'
-import nebulizerSystem from '../assets/images/medical_equipment/nebulizer_system.jpg'
-import ultrasoundSystem from '../assets/images/medical_equipment/ultrasound_system.webp'
+import pulseOximeter from '../assets/images/medical_equipment/pulse_oximeter.jpg'
+import digitalBloodPressureMonitor from '../assets/images/medical_equipment/digital_blood_pressure_monitor.jpg'
+import digitalGlucoseTestMonitor from '../assets/images/medical_equipment/digital_glucose_test_monitor.jpg'
+import digitalThermometer from '../assets/images/medical_equipment/digital_thermometer.jpg'
+import xrayMachine from '../assets/images/medical_equipment/xray_machine.jpg'
+import mriMachine from '../assets/images/medical_equipment/mri_machine.jpg'
+import advancedEcGMonitoringSystem from '../assets/images/medical_equipment/advanced_ecg_monitoring_system.jpg'
+import surgicalMask from '../assets/images/medical_equipment/surgical_mask.jpg'
+import surgicalGloves from '../assets/images/medical_equipment/surgical_gloves.jpg'
+import surgicalGowns from '../assets/images/medical_equipment/surgical_gowns.jpg'
 
 const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all")
@@ -33,8 +37,8 @@ const Products = () => {
   const categories = [
     { id: "all", name: "All Products", count: 0 },
     { id: "supplements", name: "Nutritional Supplements", count: 0 },
-    { id: "medical-devices", name: "Medical Devices", count: 4 },
-    { id: "diagnostics", name: "Diagnostic Equipment", count: 2 }
+    { id: "medical-devices", name: "Medical Devices", count: 11 },
+    { id: "diagnostics", name: "Diagnostic Equipment", count: 1 }
   ]
 
   const products = [
@@ -190,61 +194,119 @@ const Products = () => {
       badge: null
     },
 
-    // Medical Devices (keep existing)
+    // Medical Devices
     {
-      id: 19,
-      name: "Digital Blood Pressure Monitor",
-      category: "medical-devices",
-      image: medicalEquipment2,
-      description: "Accurate and reliable blood pressure monitoring for home and clinical use.",
-      features: ["Large LCD display", "Memory storage", "WHO indicator"],
-      rating: Math.random() < 0.5 ? 4.0 : 5.0,
-      badge: "Professional"
-    },
-    {
-      id: 20,
+      id: 11,
       name: "Pulse Oximeter",
       category: "medical-devices",
-      image: medicalEquipment3,
+      image: pulseOximeter,
       description: "Fingertip pulse oximeter for oxygen saturation and pulse rate monitoring.",
       features: ["OLED display", "Low battery indicator", "Auto power-off"],
       rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: null
     },
     {
-      id: 21,
+      id: 12,
+      name: "Digital Blood Pressure Monitor",
+      category: "medical-devices",
+      image: digitalBloodPressureMonitor,
+      description: "Accurate and reliable blood pressure monitoring for home and clinical use.",
+      features: ["Large LCD display", "Memory storage", "WHO indicator"],
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
+      badge: "Professional"
+    },
+    {
+      id: 13,
+      name: "Digital Glucose Test Monitor",
+      category: "medical-devices",
+      image: digitalGlucoseTestMonitor,
+      description: "Easy-to-use monitor for accurate blood glucose level testing.",
+      features: ["Fast results", "Small blood sample", "Memory function"],
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
+      badge: null
+    },
+    {
+      id: 14,
       name: "Digital Thermometer",
       category: "medical-devices",
-      image: medicalEquipment5,
+      image: digitalThermometer,
       description: "Fast and accurate temperature measurement for all ages.",
       features: ["1-second reading", "Fever alarm", "Memory recall"],
       rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Fast"
     },
     {
-      id: 22,
+      id: 15,
+      name: "X-Ray Machine",
+      category: "medical-devices",
+      image: xrayMachine,
+      description: "High-resolution X-ray imaging system for detailed diagnostics.",
+      features: ["Advanced imaging", "Low radiation dose", "User-friendly interface"],
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
+      badge: null
+    },
+    {
+      id: 16,
+      name: "MRI Machine",
+      category: "medical-devices",
+      image: mriMachine,
+      description: "State-of-the-art MRI scanner for comprehensive medical imaging.",
+      features: ["High field strength", "Patient comfort", "Advanced software"],
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
+      badge: null
+    },
+    {
+      id: 17,
+      name: "Advanced ECG Monitoring System",
+      category: "medical-devices",
+      image: advancedEcGMonitoringSystem,
+      description: "Real-time ECG monitoring system for comprehensive cardiac assessment.",
+      features: ["Multi-lead analysis", "Wireless connectivity", "Long battery life"],
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
+      badge: null
+    },
+    {
+      id: 18,
       name: "Nebulizer System",
       category: "medical-devices",
       image: nebulizerSystem,
-      description: "Compact nebulizer for respiratory medication delivery.",
+      description: "Compact nebulizer for efficient respiratory medication delivery.",
       features: ["Quiet operation", "Portable design", "Complete kit"],
       rating: Math.random() < 0.5 ? 4.0 : 5.0,
       badge: "Portable"
     },
-
-    // Diagnostic Equipment (keep existing)
     {
-      id: 23,
-      name: "Advanced Diagnostic Scanner",
-      category: "diagnostics",
-      image: medicalEquipment1,
-      description: "State-of-the-art diagnostic imaging equipment for medical facilities.",
-      features: ["High resolution", "AI-assisted", "Cloud connectivity"],
+      id: 19,
+      name: "Surgical Mask",
+      category: "medical-devices",
+      image: surgicalMask,
+      description: "Disposable surgical masks for personal protection and infection control.",
+      features: ["3-ply filtration", "Comfortable ear loops", "Breathable material"],
       rating: Math.random() < 0.5 ? 4.0 : 5.0,
-      badge: "Advanced"
+      badge: null
     },
     {
-      id: 24,
+      id: 20,
+      name: "Surgical Gloves",
+      category: "medical-devices",
+      image: surgicalGloves,
+      description: "Sterile surgical gloves for optimal hand protection and dexterity.",
+      features: ["Latex-free option", "Powder-free", "Enhanced grip"],
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
+      badge: null
+    },
+    {
+      id: 21,
+      name: "Surgical Gowns",
+      category: "medical-devices",
+      image: surgicalGowns,
+      description: "Protective surgical gowns for healthcare professionals.",
+      features: ["Fluid resistant", "Breathable fabric", "Full coverage"],
+      rating: Math.random() < 0.5 ? 4.0 : 5.0,
+      badge: null
+    },
+    {
+      id: 22,
       name: "Portable Ultrasound System",
       category: "diagnostics",
       image: ultrasoundSystem,
